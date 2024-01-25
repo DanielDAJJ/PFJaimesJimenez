@@ -1,0 +1,60 @@
+// Estilos generales para la Página
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 100%;
+    font-family: "Comfortaa";
+    color: #1C2C35;
+    background-color: #FBFEF9;
+    line-height: 1.75em;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "sobreNos sobreNos sobreNos"
+    "cajaSor cajaSor cajaSor"
+    "eventos eventos eventos"
+    "clientes clientes clientes"
+    "footer footer footer";
+    header{
+        grid-area: header;
+    }
+    main{
+        grid-area: main;
+        height: 70vh;
+    }
+    footer{
+        grid-area: footer;
+        background-color: #1C2C35;
+        color: #FBFEF9;
+        padding: 2.5em;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2em;
+        justify-content: center;
+        align-items: center;
+        strong{
+            color: #FBFEF9;
+        }
+    }
+}
+a{
+    text-decoration: none;
+    color: #1C2C35;
+    font-size: 0.95em;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+h2{
+    color: #FF3524;
+}
+strong{
+    color: #FF3524;
+}
