@@ -1,4 +1,3 @@
-// Estilos generales para la Página
 *{
     padding: 0;
     margin: 0;
@@ -27,21 +26,6 @@ body{
         grid-area: main;
         height: 70vh;
     }
-    footer{
-        grid-area: footer;
-        background-color: #1C2C35;
-        color: #FBFEF9;
-        padding: 2.5em;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 2em;
-        justify-content: center;
-        align-items: center;
-        strong{
-            color: #FBFEF9;
-        }
-    }
 }
 a{
     text-decoration: none;
@@ -58,3 +42,4 @@ h2{
 strong{
     color: #FF3524;
 }
+// Estilos generales para la Página
