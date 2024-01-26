@@ -1,0 +1,55 @@
+/**************************************** Página Eventos ****************************************/
+.pag__Eventos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    margin: 2em 0;
+    padding: 0 2.5em;
+    gap: 2.5em;
+    justify-items: center;
+    align-items: center;
+    line-height: 2em;
+    .pag__Eventos__Texto{
+        display: flex;
+        flex-direction: column;
+        grid-column: 1/3;
+        gap: 5em;
+        padding-right: 2em;
+        p{
+            font-size: 1.3em;
+            line-height: 1.5em;
+        }
+    }
+    .pag__Eventos__Form{
+        display: flex;
+        flex-direction: column;
+        gap: 2.75em;
+        border-left: 2px solid #FF3524;
+        padding-left: 2em;
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 1.05em;
+            legend{
+                font-size: 1em;
+                line-height: 1.5em;
+            }
+            input{
+                border: none;
+                width: 50%;
+                border-bottom: 2px solid #1C2C35;
+                background-color: #FBFEF9;
+            }
+            select, button{
+                background-color: #1C2C35;
+                color: #FBFEF9;
+                border: none;
+                width: 150px;
+                height: 35px;
+                padding: 5px;
+                border-radius: 1em;
+            }
+        }
+    }
+}
+

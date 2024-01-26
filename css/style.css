@@ -136,6 +136,36 @@ strong {
   color: #1C2C35;
 }
 
+.clientes__Card {
+  width: 100%;
+  max-height: 50%;
+  display: flex;
+  padding: 5em 0 2em 0;
+  gap: 2em;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #1C2C35;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #FFF1F0;
+}
+.clientes__Card .clientes__Card__IMG {
+  width: 30%;
+}
+.clientes__Card .clientes__Card__Texto {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  padding: 0 2em 0 0;
+  gap: 2em;
+  justify-content: space-between;
+}
+.clientes__Card .clientes__Card__Texto :nth-child(1) {
+  border-bottom: 2px solid #1C2C35;
+  color: #1C2C35;
+  line-height: 2em;
+}
+
 /**************************************** Componente Footer  ****************************************/
 footer {
   grid-area: footer;
@@ -298,5 +328,131 @@ footer :last-child {
 }
 
 /**************************************** Index Sección Clientes  ****************************************/
+.clientes {
+  grid-area: clientes;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  margin: 2.5em 0;
+}
+
+.clientes__Cont {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  justify-items: center;
+  align-items: center;
+  padding: 0 2.5em;
+}
+
+/**************************************** Página Cajas Sorpesa ****************************************/
+.pag__Cajasor {
+  max-width: 100%;
+  height: auto;
+  margin: 2.5em;
+  padding: 2em 0;
+  display: grid;
+  grid-template-areas: "navP producto producto" "navP producto producto" "navP producto producto";
+  grid-template-columns: 20% auto auto;
+  gap: 2em;
+}
+
+.pag__Cajasor__Nav {
+  grid-area: navP;
+  background-color: #FFF1F0;
+  justify-self: center;
+  width: 100%;
+  padding: 2.5em;
+  border-right: 2px solid #1C2C35;
+  display: flex;
+  flex-direction: column;
+}
+.pag__Cajasor__Nav .pag__Cajasor__Nav__Cabeza {
+  font-size: 2em;
+  text-align: center;
+  border-bottom: 2px solid #1C2C35;
+  line-height: 1.5em;
+  margin: 0 0 2em 0;
+}
+.pag__Cajasor__Nav .pag__Cajasor__Nav__Cabeza .pag__Cajasor__Nav__Cabeza strong {
+  color: #1C2C35;
+}
+.pag__Cajasor__Nav .pag__Cajasor__Nav__Lista {
+  list-style: none;
+  padding: 0;
+  font-size: 1.25em;
+  line-height: 2em;
+}
+.pag__Cajasor__Nav .pag__Cajasor__Nav__Lista li:hover a {
+  color: #FF3524;
+  text-decoration: underline;
+}
+
+.pag__Cajasor__Contenido {
+  grid-area: producto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  justify-items: center;
+}
+
+/**************************************** Página Eventos ****************************************/
+.pag__Eventos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  margin: 2em 0;
+  padding: 0 2.5em;
+  gap: 2.5em;
+  justify-items: center;
+  align-items: center;
+  line-height: 2em;
+}
+.pag__Eventos .pag__Eventos__Texto {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/3;
+  gap: 5em;
+  padding-right: 2em;
+}
+.pag__Eventos .pag__Eventos__Texto p {
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+.pag__Eventos .pag__Eventos__Form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.75em;
+  border-left: 2px solid #FF3524;
+  padding-left: 2em;
+}
+.pag__Eventos .pag__Eventos__Form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.05em;
+}
+.pag__Eventos .pag__Eventos__Form form legend {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+.pag__Eventos .pag__Eventos__Form form input {
+  border: none;
+  width: 50%;
+  border-bottom: 2px solid #1C2C35;
+  background-color: #FBFEF9;
+}
+.pag__Eventos .pag__Eventos__Form form select, .pag__Eventos .pag__Eventos__Form form button {
+  background-color: #1C2C35;
+  color: #FBFEF9;
+  border: none;
+  width: 150px;
+  height: 35px;
+  padding: 5px;
+  border-radius: 1em;
+}
 
 /*# sourceMappingURL=style.css.map */
