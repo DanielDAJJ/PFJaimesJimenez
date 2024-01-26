@@ -1,0 +1,13 @@
+// Estilos que modifican el cuerpo de las cards, componente cards
+.cajaSor__Cont__Card{
+    background-color: #FBFEF9;
+    border-radius: 1em;
+    border: 2px solid #1C2C35;
+    color: #1C2C35;
+    overflow: hidden;
+    gap: 2em;
+    img{
+        height: 200px;
+        width: auto;
+    }
+}

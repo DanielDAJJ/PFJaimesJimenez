@@ -1,0 +1,27 @@
+// Componente nav
+.header{
+    position: sticky;
+    top: 0;
+    background-color: #FBFEF9;
+    width: 100%;
+    padding: 0 2em 0.5em 2em;
+    z-index: 2;
+    .header__Nav__Home{
+        display: block;
+        max-width: 150px;
+        height: auto;
+    }
+    .header__Nav__Ul{
+        li{
+            margin: 0 1em;
+            a{
+                transition-duration: 0.25s;
+                transition-timing-function: ease-out;
+                &:hover{
+                    color: #FF3524;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

@@ -42,6 +42,44 @@ strong {
   color: #FF3524;
 }
 
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #FBFEF9;
+  width: 100%;
+  padding: 0 2em 0.5em 2em;
+  z-index: 2;
+}
+.header .header__Nav__Home {
+  display: block;
+  max-width: 150px;
+  height: auto;
+}
+.header .header__Nav__Ul li {
+  margin: 0 1em;
+}
+.header .header__Nav__Ul li a {
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+}
+.header .header__Nav__Ul li a:hover {
+  color: #FF3524;
+  text-decoration: underline;
+}
+
+.cajaSor__Cont__Card {
+  background-color: #FBFEF9;
+  border-radius: 1em;
+  border: 2px solid #1C2C35;
+  color: #1C2C35;
+  overflow: hidden;
+  gap: 2em;
+}
+.cajaSor__Cont__Card img {
+  height: 200px;
+  width: auto;
+}
+
 footer {
   grid-area: footer;
   background-color: #1C2C35;
