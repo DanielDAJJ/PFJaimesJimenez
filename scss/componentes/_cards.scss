@@ -10,4 +10,24 @@
         height: 200px;
         width: auto;
     }
+    .card-body{
+        h5{
+            color: #FF3524;
+            margin-bottom: 1em;
+        }
+        p{
+            margin-bottom: 1.5em;
+        }
+    }
+    .cajaSor__Cont__Card__Boton{
+        width: auto;
+        color: #FBFEF9;
+        background-color: #1C2C35;
+        transition: 0.5s ease-out;
+        &:hover{
+            border: 1px solid #1C2C35;
+            background-color: #FBFEF9;
+            color: #1C2C35;
+        }
+    }
 }
