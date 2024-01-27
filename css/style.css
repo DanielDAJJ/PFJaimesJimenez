@@ -487,4 +487,67 @@ footer :last-child {
   top: -40%;
 }
 
+/**************************************** Página Sobre Nosotros ****************************************/
+.pag__SobreNos {
+  display: grid;
+  grid-template-areas: "sobreNos sobreNos NosIMG" "sobreNos sobreNos NosIMG" "sobreNos sobreNos NosIMG";
+  margin: 2.5em 0;
+  max-width: 100%;
+  padding: 0 2.5em;
+  gap: 2em;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+.pag__SobreNos .pag__SobreNos__Texto {
+  grid-area: sobreNos;
+}
+.pag__SobreNos .pag__SobreNos__Texto .pag__SobreNos__Texto__Art {
+  display: flex;
+  flex-direction: column;
+  gap: 6em;
+}
+.pag__SobreNos .pag__SobreNos__Texto .pag__SobreNos__Texto__Art p {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+.pag__SobreNos .pag__SobreNos__Img {
+  grid-area: NosIMG;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  border-left: 2px solid #FF3524;
+  padding-left: 2em;
+}
+
+/**************************************** Página Sobre Nosotros ****************************************/
+.pag__NuestrosClientes {
+  width: 100%;
+  height: auto;
+  margin: 2.5em 0;
+  padding: 0 2.5em;
+}
+.pag__NuestrosClientes .pag__NuestrosClientes__Cont {
+  display: flex;
+  flex-direction: column;
+  gap: 6em;
+  justify-content: center;
+  align-items: center;
+}
+.pag__NuestrosClientes .pag__NuestrosClientes__Cont .pag__NuestrosClientes__Cont__Text {
+  font-size: 1.25em;
+  line-height: 1.5em;
+  max-width: 100%;
+}
+.pag__NuestrosClientes .pag__NuestrosClientes__Cont .pag__NuestrosClientes__Cont__Text .pag__NuestrosClientes__Cont__Text__IMG--1 {
+  width: 30%;
+  float: left;
+  margin: 0 2em 2em 0em;
+}
+.pag__NuestrosClientes .pag__NuestrosClientes__Cont .pag__NuestrosClientes__Cont__Text .pag__NuestrosClientes__Cont__Text__IMG--2 {
+  width: 40%;
+  float: right;
+  margin: 2em 0 0 2em;
+}
+
 /*# sourceMappingURL=style.css.map */

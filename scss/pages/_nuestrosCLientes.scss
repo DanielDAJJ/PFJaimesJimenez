@@ -1,0 +1,29 @@
+/**************************************** Página Sobre Nosotros ****************************************/
+.pag__NuestrosClientes{
+    width: 100%;
+    height: auto;
+    margin: 2.5em 0;
+    padding: 0 2.5em;
+    .pag__NuestrosClientes__Cont{
+        display: flex;
+        flex-direction: column;
+        gap: 6em;
+        justify-content: center;
+        align-items: center;
+        .pag__NuestrosClientes__Cont__Text{
+            font-size: 1.25em;
+            line-height: 1.5em;
+            max-width: 100%;
+            .pag__NuestrosClientes__Cont__Text__IMG--1{
+                width: 30%;
+                float: left;
+                margin: 0 2em 2em 0em;
+            }
+            .pag__NuestrosClientes__Cont__Text__IMG--2{
+                width: 40%;
+                float: right;
+                margin: 2em 0 0 2em;
+            }
+        }
+    }
+}
