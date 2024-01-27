@@ -49,7 +49,36 @@
                 padding: 5px;
                 border-radius: 1em;
             }
+            textarea{
+                border: none;
+                background-color: #FBFEF9;
+                border-right: 2px solid #1C2C35;
+                border-bottom: 2px solid #1C2C35;
+            }
         }
     }
 }
-
+.pag__Eventos__Slide{
+    width: 98.9vw;
+    height: 50vh;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    margin-top: 2.5em;
+    :nth-child(2){
+        position: relative;
+        top: -70%;
+    }
+    :nth-child(3){
+        position: relative;
+        top: -65%;
+    }
+    :nth-child(4){
+        position: relative;
+        top: -40%;
+    }
+    :nth-child(5){
+        position: relative;
+        top: -40%;
+    }
+}

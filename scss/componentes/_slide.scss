@@ -5,29 +5,29 @@
     overflow: hidden;
     align-items: center;
     margin: 0 0 2.5em 0;
-    .slide__Cont{
-        max-width: 100%;
-        flex: 1 0 100%;
-        animation: slide 15s infinite;
-        @keyframes slide{
-            0%, 10%{
-                transform: translateX(0);
-            }
-            20%, 30%{
-                transform: translateX(-100%);
-            }
-            40%, 50%{
-                transform: translateX(-200%);
-            }
-            60%, 70%{
-                transform: translateX(-300%);
-            }
-            80%, 90% {
-                transform: translateX(-400%);
-            }
-            100%{
-                transform: translateX(0);
-            }
+}
+.slide__Cont{
+    max-width: 100%;
+    flex: 1 0 100%;
+    animation: slide 15s infinite;
+    @keyframes slide{
+        0%, 10%{
+            transform: translateX(0);
+        }
+        20%, 30%{
+            transform: translateX(-100%);
+        }
+        40%, 50%{
+            transform: translateX(-200%);
+        }
+        60%, 70%{
+            transform: translateX(-300%);
+        }
+        80%, 90% {
+            transform: translateX(-400%);
+        }
+        100%{
+            transform: translateX(0);
         }
     }
 }

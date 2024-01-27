@@ -78,7 +78,8 @@ strong {
   align-items: center;
   margin: 0 0 2.5em 0;
 }
-.slide .slide__Cont {
+
+.slide__Cont {
   max-width: 100%;
   flex: 1 0 100%;
   animation: slide 15s infinite;
@@ -453,6 +454,37 @@ footer :last-child {
   height: 35px;
   padding: 5px;
   border-radius: 1em;
+}
+.pag__Eventos .pag__Eventos__Form form textarea {
+  border: none;
+  background-color: #FBFEF9;
+  border-right: 2px solid #1C2C35;
+  border-bottom: 2px solid #1C2C35;
+}
+
+.pag__Eventos__Slide {
+  width: 98.9vw;
+  height: 50vh;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  margin-top: 2.5em;
+}
+.pag__Eventos__Slide :nth-child(2) {
+  position: relative;
+  top: -70%;
+}
+.pag__Eventos__Slide :nth-child(3) {
+  position: relative;
+  top: -65%;
+}
+.pag__Eventos__Slide :nth-child(4) {
+  position: relative;
+  top: -40%;
+}
+.pag__Eventos__Slide :nth-child(5) {
+  position: relative;
+  top: -40%;
 }
 
 /*# sourceMappingURL=style.css.map */
