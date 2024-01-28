@@ -1,9 +1,9 @@
 /**************************************** Componente Cards  ****************************************/
 .cajaSor__Cont__Card{
-    background-color: #FBFEF9;
+    background-color: $colorSecundario;
     border-radius: 1em;
-    border: 2px solid #1C2C35;
-    color: #1C2C35;
+    border: 2px solid $colorPrimario;
+    color: $colorPrimario;
     overflow: hidden;
     gap: 2em;
     img{
@@ -12,7 +12,7 @@
     }
     .card-body{
         h5{
-            color: #FF3524;
+            color: $colorTerciario;
             margin-bottom: 1em;
         }
         p{
@@ -21,13 +21,13 @@
     }
     .cajaSor__Cont__Card__Boton{
         width: auto;
-        color: #FBFEF9;
-        background-color: #1C2C35;
+        color: $colorSecundario;
+        background-color: $colorPrimario;
         transition: 0.5s ease-out;
         &:hover{
-            border: 1px solid #1C2C35;
-            background-color: #FBFEF9;
-            color: #1C2C35;
+            border: 1px solid $colorPrimario;
+            background-color: $colorSecundario;
+            color: $colorPrimario;
         }
     }
 }
@@ -39,7 +39,7 @@
     gap: 2em;
     align-items: center;
     justify-content: space-between;
-    border: 2px solid #1C2C35;
+    border: 2px solid $colorPrimario;
     border-radius: 10px;
     overflow: hidden;
     background-color: #FFF1F0;
@@ -54,8 +54,8 @@
         gap: 2em;
         justify-content: space-between;
         :nth-child(1){
-            border-bottom: 2px solid #1C2C35;
-            color: #1C2C35;
+            border-bottom: 2px solid $colorPrimario;
+            color: $colorPrimario;
             line-height: 2em;
         }
     }

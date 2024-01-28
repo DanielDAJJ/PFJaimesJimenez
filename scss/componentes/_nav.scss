@@ -2,7 +2,7 @@
 .header{
     position: sticky;
     top: 0;
-    background-color: #FBFEF9;
+    background-color: $colorSecundario;
     width: 100%;
     padding: 0 2em 0.5em 2em;
     z-index: 2;
@@ -18,7 +18,7 @@
                 transition-duration: 0.25s;
                 transition-timing-function: ease-out;
                 &:hover{
-                    color: #FF3524;
+                    color: $colorTerciario;
                     text-decoration: underline;
                 }
             }

@@ -7,8 +7,8 @@
 body{
     max-width: 100%;
     font-family: "Comfortaa";
-    color: #1c2c35;
-    background-color: #FBFEF9;
+    color: $colorPrimario;
+    background-color: $colorSecundario;
     line-height: 1.75em;
     box-sizing: border-box;
     display: grid;
@@ -30,7 +30,7 @@ body{
 }
 a{
     text-decoration: none;
-    color: #1C2C35;
+    color: $colorPrimario;
     font-size: 0.95em;
 }
 img{
@@ -38,8 +38,8 @@ img{
     height: auto;
 }
 h2{
-    color: #FF3524;
+    color: $colorTerciario;
 }
 strong{
-    color: #FF3524;
+    color: $colorTerciario;
 }

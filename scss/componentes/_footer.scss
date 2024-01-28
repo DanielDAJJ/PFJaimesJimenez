@@ -1,8 +1,8 @@
 /**************************************** Componente Footer  ****************************************/
 footer{
     grid-area: footer;
-    background-color: #1C2C35;
-    color: #FBFEF9;
+    background-color: $colorPrimario;
+    color: $colorSecundario;
     padding: 2.5em;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -11,7 +11,7 @@ footer{
     justify-content: center;
     align-items: center;
     strong{
-        color: #FBFEF9;
+        color: $colorSecundario;
     }
     :nth-child(1){
         width: 150px;

@@ -18,17 +18,17 @@
     justify-self: center;
     width: 100%;
     padding: 2.5em;
-    border-right: 2px solid #1C2C35;
+    border-right: 2px solid $colorPrimario;
     display: flex;
     flex-direction: column;
     .pag__Cajasor__Nav__Cabeza{
         font-size: 2em;
         text-align: center;
-        border-bottom: 2px solid #1C2C35;
+        border-bottom: 2px solid $colorPrimario;
         line-height: 1.5em;
         margin: 0 0 2em 0;
         .pag__Cajasor__Nav__Cabeza strong{
-            color: #1C2C35;
+            color: $colorPrimario;
         }
     }
     .pag__Cajasor__Nav__Lista{
@@ -38,7 +38,7 @@
         line-height: 2em;
         li{
             &:hover a{
-                color: #FF3524;
+                color: $colorTerciario;
                 text-decoration: underline;
             }
         }

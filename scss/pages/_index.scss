@@ -3,7 +3,7 @@
     grid-area: sobreNos;
     width: 100%;
     margin: 2.5em 0;
-    border: solid #FF3524;
+    border: solid $colorTerciario;
     border-width: 2px 0;
     padding: 2em 0;
     .sobreNos__Video{
@@ -62,20 +62,20 @@
     padding: 0.5em 0.5em;
     font-weight: 700;
     font-size: 1.25em;
-    background-color: #1C2C35;
+    background-color: $colorPrimario;
     border: none;
     border-radius: 1em;
     transition: 0.5s;
     a{
         width: 100%;
         height: 100%;
-        color: #FBFEF9;
+        color: $colorSecundario;
     }
     &:hover{
-        background-color: #FBFEF9;
-        border: 1px solid #1C2C35;
+        background-color: $colorSecundario;
+        border: 1px solid $colorPrimario;
         a{
-            color: #1C2C35;
+            color: $colorPrimario;
         }
     }
 }
@@ -90,7 +90,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 3em;
-    border: solid #FF3524;
+    border: solid $colorTerciario;
     border-width: 2px 0;
 }
 .enventos__Texto{

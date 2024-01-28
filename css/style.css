@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+/************************************Variables Definidas para la página**********************/
 /**************************************** Estilos Generales De La Página  ****************************************/
 * {
   padding: 0;
@@ -27,7 +28,7 @@ body main {
 
 a {
   text-decoration: none;
-  color: #1C2C35;
+  color: #1c2c35;
   font-size: 0.95em;
 }
 
@@ -44,7 +45,6 @@ strong {
   color: #FF3524;
 }
 
-/************************************Variables Definidas para la página**********************/
 /**************************************** Componente Nav  ****************************************/
 .header {
   position: sticky;
@@ -110,8 +110,8 @@ strong {
 .cajaSor__Cont__Card {
   background-color: #FBFEF9;
   border-radius: 1em;
-  border: 2px solid #1C2C35;
-  color: #1C2C35;
+  border: 2px solid #1c2c35;
+  color: #1c2c35;
   overflow: hidden;
   gap: 2em;
 }
@@ -129,13 +129,13 @@ strong {
 .cajaSor__Cont__Card .cajaSor__Cont__Card__Boton {
   width: auto;
   color: #FBFEF9;
-  background-color: #1C2C35;
+  background-color: #1c2c35;
   transition: 0.5s ease-out;
 }
 .cajaSor__Cont__Card .cajaSor__Cont__Card__Boton:hover {
-  border: 1px solid #1C2C35;
+  border: 1px solid #1c2c35;
   background-color: #FBFEF9;
-  color: #1C2C35;
+  color: #1c2c35;
 }
 
 .clientes__Card {
@@ -146,7 +146,7 @@ strong {
   gap: 2em;
   align-items: center;
   justify-content: space-between;
-  border: 2px solid #1C2C35;
+  border: 2px solid #1c2c35;
   border-radius: 10px;
   overflow: hidden;
   background-color: #FFF1F0;
@@ -163,15 +163,15 @@ strong {
   justify-content: space-between;
 }
 .clientes__Card .clientes__Card__Texto :nth-child(1) {
-  border-bottom: 2px solid #1C2C35;
-  color: #1C2C35;
+  border-bottom: 2px solid #1c2c35;
+  color: #1c2c35;
   line-height: 2em;
 }
 
 /**************************************** Componente Footer  ****************************************/
 footer {
   grid-area: footer;
-  background-color: #1C2C35;
+  background-color: #1c2c35;
   color: #FBFEF9;
   padding: 2.5em;
   display: grid;
@@ -286,7 +286,7 @@ footer :last-child {
   padding: 0.5em 0.5em;
   font-weight: 700;
   font-size: 1.25em;
-  background-color: #1C2C35;
+  background-color: #1c2c35;
   border: none;
   border-radius: 1em;
   transition: 0.5s;
@@ -298,10 +298,10 @@ footer :last-child {
 }
 .cajaSor__Boton:hover {
   background-color: #FBFEF9;
-  border: 1px solid #1C2C35;
+  border: 1px solid #1c2c35;
 }
 .cajaSor__Boton:hover a {
-  color: #1C2C35;
+  color: #1c2c35;
 }
 
 /**************************************** Index Sección Eventos  ****************************************/
@@ -369,19 +369,19 @@ footer :last-child {
   justify-self: center;
   width: 100%;
   padding: 2.5em;
-  border-right: 2px solid #1C2C35;
+  border-right: 2px solid #1c2c35;
   display: flex;
   flex-direction: column;
 }
 .pag__Cajasor__Nav .pag__Cajasor__Nav__Cabeza {
   font-size: 2em;
   text-align: center;
-  border-bottom: 2px solid #1C2C35;
+  border-bottom: 2px solid #1c2c35;
   line-height: 1.5em;
   margin: 0 0 2em 0;
 }
 .pag__Cajasor__Nav .pag__Cajasor__Nav__Cabeza .pag__Cajasor__Nav__Cabeza strong {
-  color: #1C2C35;
+  color: #1c2c35;
 }
 .pag__Cajasor__Nav .pag__Cajasor__Nav__Lista {
   list-style: none;
@@ -444,11 +444,11 @@ footer :last-child {
 .pag__Eventos .pag__Eventos__Form form input {
   border: none;
   width: 50%;
-  border-bottom: 2px solid #1C2C35;
+  border-bottom: 2px solid #1c2c35;
   background-color: #FBFEF9;
 }
 .pag__Eventos .pag__Eventos__Form form select, .pag__Eventos .pag__Eventos__Form form button {
-  background-color: #1C2C35;
+  background-color: #1c2c35;
   color: #FBFEF9;
   border: none;
   width: 150px;
@@ -459,8 +459,8 @@ footer :last-child {
 .pag__Eventos .pag__Eventos__Form form textarea {
   border: none;
   background-color: #FBFEF9;
-  border-right: 2px solid #1C2C35;
-  border-bottom: 2px solid #1C2C35;
+  border-right: 2px solid #1c2c35;
+  border-bottom: 2px solid #1c2c35;
 }
 
 .pag__Eventos__Slide {
