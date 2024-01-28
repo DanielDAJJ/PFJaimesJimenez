@@ -18,17 +18,17 @@
     justify-self: center;
     width: 100%;
     padding: 2.5em;
-    border-right: 2px solid $colorPrimario;
+    border-right: 2px solid map-get($colores , colorPrimario);
     display: flex;
     flex-direction: column;
     .pag__Cajasor__Nav__Cabeza{
         font-size: 2em;
         text-align: center;
-        border-bottom: 2px solid $colorPrimario;
+        border-bottom: 2px solid map-get($colores , colorPrimario);
         line-height: 1.5em;
         margin: 0 0 2em 0;
         .pag__Cajasor__Nav__Cabeza strong{
-            color: $colorPrimario;
+            color: map-get($colores , colorPrimario);
         }
     }
     .pag__Cajasor__Nav__Lista{

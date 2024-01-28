@@ -37,11 +37,11 @@
             input{
                 border: none;
                 width: 50%;
-                border-bottom: 2px solid $colorPrimario;
+                border-bottom: 2px solid map-get($colores , colorPrimario);
                 background-color: $colorSecundario;
             }
             select, button{
-                background-color: $colorPrimario;
+                background-color: map-get($colores , colorPrimario);
                 color: $colorSecundario;
                 border: none;
                 width: 150px;
@@ -52,8 +52,8 @@
             textarea{
                 border: none;
                 background-color: $colorSecundario;
-                border-right: 2px solid $colorPrimario;
-                border-bottom: 2px solid $colorPrimario;
+                border-right: 2px solid map-get($colores , colorPrimario);
+                border-bottom: 2px solid map-get($colores , colorPrimario);
             }
         }
     }

@@ -1,9 +1,9 @@
 /**************************************** Componente Cards  ****************************************/
 .cajaSor__Cont__Card{
-    background-color: $colorSecundario;
+    background-color: map-get($colores, colorSecundario);
     border-radius: 1em;
-    border: 2px solid $colorPrimario;
-    color: $colorPrimario;
+    border: 2px solid map-get($colores , colorPrimario);
+    color: map-get($colores , colorPrimario);
     overflow: hidden;
     gap: 2em;
     img{
@@ -21,13 +21,13 @@
     }
     .cajaSor__Cont__Card__Boton{
         width: auto;
-        color: $colorSecundario;
-        background-color: $colorPrimario;
+        color: map-get($colores, colorSecundario);
+        background-color: map-get($colores , colorPrimario);
         transition: 0.5s ease-out;
         &:hover{
-            border: 1px solid $colorPrimario;
-            background-color: $colorSecundario;
-            color: $colorPrimario;
+            border: 1px solid map-get($colores , colorPrimario);
+            background-color: map-get($colores, colorSecundario);
+            color: map-get($colores , colorPrimario);
         }
     }
 }
@@ -39,7 +39,7 @@
     gap: 2em;
     align-items: center;
     justify-content: space-between;
-    border: 2px solid $colorPrimario;
+    border: 2px solid map-get($colores , colorPrimario);
     border-radius: 10px;
     overflow: hidden;
     background-color: #FFF1F0;
@@ -54,8 +54,8 @@
         gap: 2em;
         justify-content: space-between;
         :nth-child(1){
-            border-bottom: 2px solid $colorPrimario;
-            color: $colorPrimario;
+            border-bottom: 2px solid map-get($colores , colorPrimario);
+            color: map-get($colores , colorPrimario);
             line-height: 2em;
         }
     }

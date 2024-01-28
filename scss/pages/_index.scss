@@ -62,7 +62,7 @@
     padding: 0.5em 0.5em;
     font-weight: 700;
     font-size: 1.25em;
-    background-color: $colorPrimario;
+    background-color: map-get($colores , colorPrimario);
     border: none;
     border-radius: 1em;
     transition: 0.5s;
@@ -73,9 +73,9 @@
     }
     &:hover{
         background-color: $colorSecundario;
-        border: 1px solid $colorPrimario;
+        border: 1px solid map-get($colores , colorPrimario);
         a{
-            color: $colorPrimario;
+            color: map-get($colores , colorPrimario);
         }
     }
 }

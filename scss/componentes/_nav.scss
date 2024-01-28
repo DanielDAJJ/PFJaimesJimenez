@@ -2,7 +2,7 @@
 .header{
     position: sticky;
     top: 0;
-    background-color: $colorSecundario;
+    background-color: map-get($colores, colorSecundario);
     width: 100%;
     padding: 0 2em 0.5em 2em;
     z-index: 2;
