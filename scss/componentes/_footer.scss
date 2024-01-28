@@ -2,7 +2,7 @@
 footer{
     grid-area: footer;
     background-color: map-get($colores , colorPrimario);
-    color: $colorSecundario;
+    color: map-get($colores, colorSecundario);
     padding: 2.5em;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -11,7 +11,7 @@ footer{
     justify-content: center;
     align-items: center;
     strong{
-        color: $colorSecundario;
+        color: map-get($colores, colorSecundario);
     }
     :nth-child(1){
         width: 150px;

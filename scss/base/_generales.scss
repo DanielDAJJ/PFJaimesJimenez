@@ -38,8 +38,8 @@ img{
     height: auto;
 }
 h2{
-    color: $colorTerciario;
+    color: map-get($colores, colorTerciario);
 }
 strong{
-    color: $colorTerciario;
+    color: map-get($colores, colorTerciario);
 }

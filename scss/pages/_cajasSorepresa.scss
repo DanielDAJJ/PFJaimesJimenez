@@ -38,7 +38,7 @@
         line-height: 2em;
         li{
             &:hover a{
-                color: $colorTerciario;
+                color: map-get($colores, colorTerciario);
                 text-decoration: underline;
             }
         }

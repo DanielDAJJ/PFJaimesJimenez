@@ -12,7 +12,7 @@
     }
     .card-body{
         h5{
-            color: $colorTerciario;
+            color: map-get($colores, colorTerciario);
             margin-bottom: 1em;
         }
         p{
