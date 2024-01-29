@@ -10,7 +10,7 @@
     "navP producto producto"
     "navP producto producto";
     grid-template-columns: 20% auto auto;
-    gap: map-get($espacio, gap);
+    gap: map-get($espacio, Gap);
 }
 .pag__Cajasor__Nav{
     grid-area: navP;
@@ -48,6 +48,6 @@
     grid-area: producto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: map-get($espacio, gap);
+    gap: map-get($espacio, Gap);
     justify-items: center;
 }

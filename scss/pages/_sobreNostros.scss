@@ -8,7 +8,7 @@
     margin: map-get($espacio, marginPadding) 0;
     max-width: map-get($espacio, tamañoMax);
     padding: 0 map-get($espacio, marginPadding);
-    gap: map-get($espacio, gap);
+    gap: map-get($espacio, Gap);
     height: auto;
     justify-content: center;
     align-items: center;
@@ -28,7 +28,7 @@
         grid-area: NosIMG;
         display: flex;
         flex-direction: column;
-        gap: map-get($espacio, gap);
+        gap: map-get($espacio, Gap);
         border-left: 2px solid map-get($colores, colorTerciario);
         padding-left: 2em;
     }

@@ -1,0 +1,16 @@
+.grid_template-1 {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.grid_template-2 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

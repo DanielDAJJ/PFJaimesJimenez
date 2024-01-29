@@ -110,14 +110,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: map-get($espacio, gap);
+    gap: map-get($espacio, Gap);
     margin: map-get($espacio, marginPadding) 0;
 }
 .clientes__Cont{
     width: map-get($espacio, tamañoMax);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: map-get($espacio, gap);
+    gap: map-get($espacio, Gap);
     justify-items: center;
     align-items: center;
     padding: 0 map-get($espacio, marginPadding);
