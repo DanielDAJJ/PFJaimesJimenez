@@ -1,8 +1,8 @@
 /**************************************** Página Cajas Sorpesa ****************************************/
 .pag__Cajasor{
-    max-width: 100%;
+    max-width: map-get($espacio, tamañoMax);
     height: auto;
-    margin: 2.5em;
+    margin: map-get($espacio, marginPadding);
     padding: 2em 0;
     display: grid;
     grid-template-areas: 
@@ -10,14 +10,14 @@
     "navP producto producto"
     "navP producto producto";
     grid-template-columns: 20% auto auto;
-    gap: 2em;
+    gap: map-get($espacio, gap);
 }
 .pag__Cajasor__Nav{
     grid-area: navP;
     background-color: #FFF1F0;
     justify-self: center;
-    width: 100%;
-    padding: 2.5em;
+    width: map-get($espacio, tamañoMax);
+    padding: map-get($espacio, marginPadding);
     border-right: 2px solid map-get($colores , colorPrimario);
     display: flex;
     flex-direction: column;
@@ -48,6 +48,6 @@
     grid-area: producto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2em;
+    gap: map-get($espacio, gap);
     justify-items: center;
 }

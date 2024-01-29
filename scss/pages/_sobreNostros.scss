@@ -5,10 +5,10 @@
     "sobreNos sobreNos NosIMG"
     "sobreNos sobreNos NosIMG"
     "sobreNos sobreNos NosIMG";
-    margin: 2.5em 0;
-    max-width: 100%;
-    padding: 0 2.5em;
-    gap: 2em;
+    margin: map-get($espacio, marginPadding) 0;
+    max-width: map-get($espacio, tamañoMax);
+    padding: 0 map-get($espacio, marginPadding);
+    gap: map-get($espacio, gap);
     height: auto;
     justify-content: center;
     align-items: center;
@@ -28,7 +28,7 @@
         grid-area: NosIMG;
         display: flex;
         flex-direction: column;
-        gap: 2em;
+        gap: map-get($espacio, gap);
         border-left: 2px solid map-get($colores, colorTerciario);
         padding-left: 2em;
     }

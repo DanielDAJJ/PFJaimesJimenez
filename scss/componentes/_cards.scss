@@ -5,7 +5,7 @@
     border: 2px solid map-get($colores , colorPrimario);
     color: map-get($colores , colorPrimario);
     overflow: hidden;
-    gap: 2em;
+    gap: map-get($espacio, gap);
     img{
         height: 200px;
         width: auto;
@@ -32,11 +32,11 @@
     }
 }
 .clientes__Card{
-    width: 100%;
+    width: map-get($espacio, tamañoMax);
     max-height: 50%;
     display: flex;
     padding: 5em 0 2em 0;
-    gap: 2em;
+    gap: map-get($espacio, gap);
     align-items: center;
     justify-content: space-between;
     border: 2px solid map-get($colores , colorPrimario);
@@ -51,12 +51,12 @@
         width: 70%;
         flex-direction: column;
         padding: 0 2em 0 0;
-        gap: 2em;
+        gap: map-get($espacio, gap);
         justify-content: space-between;
         :nth-child(1){
             border-bottom: 2px solid map-get($colores , colorPrimario);
             color: map-get($colores , colorPrimario);
-            line-height: 2em;
+            line-height: map-get($espacio, gap);
         }
     }
 }

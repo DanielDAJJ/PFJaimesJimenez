@@ -3,7 +3,7 @@
     position: sticky;
     top: 0;
     background-color: map-get($colores, colorSecundario);
-    width: 100%;
+    width: map-get($espacio, tamañoMax);
     padding: 0 2em 0.5em 2em;
     z-index: 2;
     .header__Nav__Home{

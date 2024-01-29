@@ -1,14 +1,14 @@
 /**************************************** Componente Slide  ****************************************/
 .slide{
     display: flex;
-    height: 100%;
+    height: map-get($espacio, tamañoMax);
     overflow: hidden;
     align-items: center;
-    margin: 0 0 2.5em 0;
+    margin-bottom: map-get($espacio, marginPadding);
 }
 .slide__Cont{
-    max-width: 100%;
-    flex: 1 0 100%;
+    max-width: map-get($espacio, tamañoMax);
+    flex: 1 0 map-get($espacio, tamañoMax);
     animation: slide 15s infinite;
     @keyframes slide{
         0%, 10%{

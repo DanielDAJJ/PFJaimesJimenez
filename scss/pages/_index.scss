@@ -1,8 +1,8 @@
 /**************************************** Index Sección Sobre Nosotros ****************************************/
 .sobreNos{
     grid-area: sobreNos;
-    width: 100%;
-    margin: 2.5em 0;
+    width: map-get($espacio, tamañoMax);
+    margin: map-get($espacio, marginPadding) 0;
     border: solid map-get($colores, colorTerciario);
     border-width: 2px 0;
     padding: 2em 0;
@@ -29,8 +29,8 @@
 /**************************************** Index Sección Cajas Sorpresa  ****************************************/
 .cajaSor{
     grid-area: cajaSor;
-    width: 100%;
-    margin: 2.5em 0;
+    width: map-get($espacio, tamañoMax);
+    margin: map-get($espacio, marginPadding) 0;
     padding: 2em 2em;
     display: flex;
     flex-wrap: wrap;
@@ -40,7 +40,7 @@
     gap: 4em;
     position: relative;
     .cajaSor__Cont{
-        width: 100%;
+        width: map-get($espacio, tamañoMax);
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 1em;
@@ -50,7 +50,7 @@
 }
 .cajaSor__BG{
     background-color: #FFC2BD;
-    width: 100%;
+    width: map-get($espacio, tamañoMax);
     height: 250px;
     position: absolute;
     top: 50vh;
@@ -67,8 +67,8 @@
     border-radius: 1em;
     transition: 0.5s;
     a{
-        width: 100%;
-        height: 100%;
+        width: map-get($espacio, tamañoMax);
+        height: map-get($espacio, tamañoMax);
         color: map-get($colores, colorSecundario);
     }
     &:hover{
@@ -82,9 +82,9 @@
 /**************************************** Index Sección Eventos  ****************************************/
 .eventos{
     grid-area: eventos;
-    width: 100%;
+    width: map-get($espacio, tamañoMax);
     height: auto;
-    margin: 2.5em 0;
+    margin: map-get($espacio, marginPadding) 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,20 +105,20 @@
 /**************************************** Index Sección Clientes  ****************************************/
 .clientes{
     grid-area: clientes;
-    width: 100%;
+    width: map-get($espacio, tamañoMax);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2em;
-    margin: 2.5em 0;
+    gap: map-get($espacio, gap);
+    margin: map-get($espacio, marginPadding) 0;
 }
 .clientes__Cont{
-    width: 100%;
+    width: map-get($espacio, tamañoMax);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2em;
+    gap: map-get($espacio, gap);
     justify-items: center;
     align-items: center;
-    padding: 0 2.5em;
+    padding: 0 map-get($espacio, marginPadding);
 }

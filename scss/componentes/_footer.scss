@@ -3,11 +3,11 @@ footer{
     grid-area: footer;
     background-color: map-get($colores , colorPrimario);
     color: map-get($colores, colorSecundario);
-    padding: 2.5em;
+    padding: map-get($espacio, marginPadding);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 2em;
+    gap: map-get($espacio, gap);
     justify-content: center;
     align-items: center;
     strong{
@@ -23,7 +23,7 @@ footer{
         justify-self: center;
     }
     :nth-child(3){
-        width: 100%;
+        width: map-get($espacio, tamañoMax);
         grid-row: 2;
         grid-column: 1 / 5;
     }

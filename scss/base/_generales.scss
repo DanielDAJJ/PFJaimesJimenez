@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    max-width: 100%;
+    max-width: map-get($espacio, tamañoMax);
     font-family: "Comfortaa";
     color: map-get($colores , colorPrimario);
     background-color: map-get($colores, colorSecundario);
@@ -34,7 +34,7 @@ a{
     font-size: 0.95em;
 }
 img{
-    max-width: 100%;
+    max-width: map-get($espacio, tamañoMax);
     height: auto;
 }
 h2{

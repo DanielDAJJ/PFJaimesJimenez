@@ -3,3 +3,8 @@ $colores: (
     colorSecundario: $colorSecundario,
     colorTerciario: $colorTerciario,
 );
+$espacio: (
+    tamañoMax: $anchoMax,
+    Gap: $espacioEntreElementos,
+    marginPadding: $espacioInterno,
+);
