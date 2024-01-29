@@ -34,11 +34,9 @@
 .clientes__Card{
     width: map-get($espacio, tamañoMax);
     max-height: 50%;
-    display: flex;
+    @extend %flex_tamplate-1;
     padding: 4em 0 2em 0;
     gap: map-get($espacio, Gap) + 3em;
-    align-items: center;
-    justify-content: space-between;
     border: 2px solid map-get($colores , colorPrimario);
     border-radius: 10px;
     overflow: hidden;

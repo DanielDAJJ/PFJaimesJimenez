@@ -1,23 +1,29 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 /************************************Variables Definidas para la página**********************/
-.grid_template-1 {
+.pag__Eventos, .clientes__Cont {
   display: grid;
   justify-items: center;
   align-items: center;
 }
 
-.grid_template-2 {
+.pag__SobreNos, footer {
   display: grid;
   justify-content: center;
   align-items: center;
 }
 
-.flex-column {
+.pag__NuestrosClientes .pag__NuestrosClientes__Cont, .clientes {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.eventos, .clientes__Card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /**************************************** Estilos Generales De La Página  ****************************************/
@@ -160,11 +166,8 @@ strong {
 .clientes__Card {
   width: 100%;
   max-height: 50%;
-  display: flex;
   padding: 4em 0 2em 0;
   gap: 5em;
-  align-items: center;
-  justify-content: space-between;
   border: 2px solid #1c2c35;
   border-radius: 10px;
   overflow: hidden;
@@ -193,12 +196,9 @@ footer {
   background-color: #1c2c35;
   color: #FBFEF9;
   padding: 2.5em;
-  display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 2em;
-  justify-content: center;
-  align-items: center;
 }
 footer strong {
   color: #FBFEF9;
@@ -329,10 +329,7 @@ footer :last-child {
   width: 100%;
   height: auto;
   margin: 2.5em 0;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
   gap: 3em;
   border: solid #FF3524;
   border-width: 2px 0;
@@ -352,21 +349,14 @@ footer :last-child {
 .clientes {
   grid-area: clientes;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 2em;
   margin: 2.5em 0;
 }
 
 .clientes__Cont {
   width: 100%;
-  display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2em;
-  justify-items: center;
-  align-items: center;
   padding: 0 2.5em;
 }
 
@@ -423,14 +413,11 @@ footer :last-child {
 
 /**************************************** Página Eventos ****************************************/
 .pag__Eventos {
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
   margin: 2em 0;
   padding: 0 2.5em;
   gap: 2.5em;
-  justify-items: center;
-  align-items: center;
   line-height: 2em;
 }
 .pag__Eventos .pag__Eventos__Texto {
@@ -509,15 +496,12 @@ footer :last-child {
 
 /**************************************** Página Sobre Nosotros ****************************************/
 .pag__SobreNos {
-  display: grid;
   grid-template-areas: "sobreNos sobreNos NosIMG" "sobreNos sobreNos NosIMG" "sobreNos sobreNos NosIMG";
   margin: 2.5em 0;
   max-width: 100%;
   padding: 0 2.5em;
   gap: 2em;
   height: auto;
-  justify-content: center;
-  align-items: center;
 }
 .pag__SobreNos .pag__SobreNos__Texto {
   grid-area: sobreNos;
@@ -548,11 +532,7 @@ footer :last-child {
   padding: 0 2.5em;
 }
 .pag__NuestrosClientes .pag__NuestrosClientes__Cont {
-  display: flex;
-  flex-direction: column;
   gap: 6em;
-  justify-content: center;
-  align-items: center;
 }
 .pag__NuestrosClientes .pag__NuestrosClientes__Cont .pag__NuestrosClientes__Cont__Text {
   font-size: 1.25em;

@@ -1,13 +1,11 @@
 /**************************************** Página Eventos ****************************************/
 .pag__Eventos{
-    display: grid;
+    @extend %grid_template-1;
     grid-template-columns: repeat(3, 1fr);
     width: map-get($espacio, tamañoMax);
     margin: 2em 0;
     padding: 0 map-get($espacio, marginPadding);
     gap: map-get($espacio, Gap) + 0.5em;
-    justify-items: center;
-    align-items: center;
     line-height: 2em;
     .pag__Eventos__Texto{
         display: flex;

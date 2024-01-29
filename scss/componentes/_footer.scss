@@ -4,12 +4,10 @@ footer{
     background-color: map-get($colores , colorPrimario);
     color: map-get($colores, colorSecundario);
     padding: map-get($espacio, marginPadding);
-    display: grid;
+    @extend %grid_template-2;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: map-get($espacio, Gap);
-    justify-content: center;
-    align-items: center;
     strong{
         color: map-get($colores, colorSecundario);
     }

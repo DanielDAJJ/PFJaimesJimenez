@@ -5,11 +5,8 @@
     margin: map-get($espacio, marginPadding) 0;
     padding: 0 map-get($espacio, marginPadding);
     .pag__NuestrosClientes__Cont{
-        display: flex;
-        flex-direction: column;
+        @extend %flex_column;
         gap: 6em;
-        justify-content: center;
-        align-items: center;
         .pag__NuestrosClientes__Cont__Text{
             font-size: 1.25em;
             line-height: 1.5em;
