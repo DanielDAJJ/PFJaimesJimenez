@@ -13,8 +13,7 @@
     .pag__SobreNos__Texto{
         grid-area: sobreNos;
         .pag__SobreNos__Texto__Art{
-            display: flex;
-            flex-direction: column;
+            @include display(flex, column, auto, auto);
             gap: 6em;
             p{
                 font-size: 1.5em;
@@ -24,8 +23,7 @@
     }
     .pag__SobreNos__Img{
         grid-area: NosIMG;
-        display: flex;
-        flex-direction: column;
+        @include display(flex, column, auto, auto);
         gap: map-get($espacio, Gap);
         border-left: 2px solid map-get($colores, colorTerciario);
         padding-left: 2em;

@@ -19,8 +19,7 @@
     width: map-get($espacio, tamañoMax);
     padding: map-get($espacio, marginPadding);
     border-right: 2px solid map-get($colores , colorPrimario);
-    display: flex;
-    flex-direction: column;
+    @include display (flex, column, auto, auto);
     .pag__Cajasor__Nav__Cabeza{
         font-size: 2em;
         text-align: center;

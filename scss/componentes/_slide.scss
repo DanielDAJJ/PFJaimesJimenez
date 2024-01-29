@@ -1,9 +1,8 @@
 /**************************************** Componente Slide  ****************************************/
 .slide{
-    display: flex;
+    @include display (flex, auto, auto, center);
     height: map-get($espacio, tamañoMax);
     overflow: hidden;
-    align-items: center;
     margin-bottom: map-get($espacio, marginPadding);
 }
 .slide__Cont{

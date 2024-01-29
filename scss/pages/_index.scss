@@ -8,18 +8,15 @@
     padding: 2em 0;
     .sobreNos__Video{
         width: auto;
-        display: flex;
-        align-items: center;
+        @include display (flex, auto, auto, center);
         iframe{
             width: 480px;
             aspect-ratio: 16/ 9;
         }
     }
     .sobreNos__Texto{
-        display: flex;
+        @include display (flex, column, space-around, auto);
         width: 480px;
-        flex-direction: column;
-        justify-content: space-around;
         gap: 3em;
         p{
             font-size: 1.25em;
@@ -32,11 +29,8 @@
     width: map-get($espacio, tamañoMax);
     margin: map-get($espacio, marginPadding) 0;
     padding: 2em 2em;
-    display: flex;
+    @include display (flex, column, space-between, center);
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     gap: 4em;
     position: relative;
     .cajaSor__Cont{
