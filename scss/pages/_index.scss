@@ -12,12 +12,20 @@
         iframe{
             width: 480px;
             aspect-ratio: 16/ 9;
+            @include tablet {
+                width: 460px;
+            }
         }
     }
     .sobreNos__Texto{
         @include display (flex, column, space-around, auto);
         width: 480px;
         gap: 3em;
+        @include tablet {
+            text-align: center;
+            margin: 2em 0 0 0;
+            gap: 2em;
+        }
         p{
             font-size: 1.25em;
         }

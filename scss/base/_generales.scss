@@ -20,12 +20,43 @@ body{
     "eventos eventos eventos"
     "clientes clientes clientes"
     "footer footer footer";
+    @include tablet {
+        grid-template-areas:
+        "header header"
+        "main main"
+        "sobreNos sobreNos"
+        "cajaSor cajaSor"
+        "eventos eventos"
+        "clientes clientes"
+        "footer footer";
+    }
+    @include mobile {
+        max-width: 100%;
+        grid-template-areas: 
+        "header"
+        "main"
+        "sobreNos"
+        "cajaSor"
+        "eventos"
+        "clientes"
+        "footer";
+        padding: 0;
+    }
     header{
         grid-area: header;
     }
     main{
         grid-area: main;
         height: 70vh;
+        @include tablet{
+            padding: 0;
+            height: 75vh;
+        }
+        @include mobile{
+            width: 100vw;
+            padding: 0;
+            height: 30vh;
+        }
     }
 }
 a{

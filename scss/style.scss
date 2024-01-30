@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
 @import'utilities/variables';
 @import'utilities/maps';
 @import'utilities/mixin';
 @import'utilities/extend';
 
+@import'utilities/responsive';
 @import'base/generales';
 @import'componentes/nav';
 @import'componentes/slide';
@@ -15,3 +17,4 @@
 @import'pages/eventos';
 @import'pages/sobreNostros';
 @import'pages/nuestrosCLientes';
+@import'utilities/responsive';

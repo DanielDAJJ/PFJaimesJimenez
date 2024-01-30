@@ -10,6 +10,9 @@
         display: block;
         max-width: 150px;
         height: auto;
+        @include tablet{
+            width: 125px;
+        }
     }
     .header__Nav__Ul{
         li{
