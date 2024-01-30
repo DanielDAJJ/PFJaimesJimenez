@@ -134,6 +134,9 @@
     gap: 5em;
     .enventos__Texto__Parrafo{
         font-size: 1.25em;
+        @include mobile {
+            padding: 0 2em;
+        }
     }
     @include tablet {
         text-align: center;
@@ -151,6 +154,10 @@
     @extend %flex_column;
     gap: map-get($espacio, Gap);
     margin: map-get($espacio, marginPadding) 0;
+    @include mobile {
+        text-align: center;
+        padding: 0 1em;
+    }
 }
 .clientes__Cont{
     width: map-get($espacio, tamañoMax);

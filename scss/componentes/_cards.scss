@@ -41,8 +41,17 @@
     border-radius: 10px;
     overflow: hidden;
     background-color: #FFF1F0;
+    @include mobile {
+        flex-direction: column;
+        padding: 0;
+        max-height: 100%;
+        text-align: left;
+    }
     .clientes__Card__IMG{
         width: 30%;
+        @include mobile {
+            width: map-get($espacio, tamañoMax);
+        }
     }
     .clientes__Card__Texto{
         @include display (flex, column, space-between, auto);

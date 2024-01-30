@@ -12,6 +12,11 @@
         height: auto;
         text-align: center;
     }
+    @include mobile {
+        grid-template-columns: 1fr;
+        height: auto;
+        text-align: center;
+    }
     .pag__Eventos__Texto{
         @include display(flex, column, auto, auto);
         grid-column: 1/3;
@@ -21,6 +26,9 @@
             grid-column: 1/3;
             padding-right: 0;
             border-bottom: 2px solid map-get($colores, colorTerciario);
+        }
+        @include mobile {
+            grid-column: 1 / 2;
         }
         p{
             font-size: 1.3em;
@@ -37,6 +45,9 @@
             align-items: center;
             padding: 0;
             border: none;
+        }
+        @include mobile {
+            grid-column: 1 / 2;
         }
         form{
             @include display (flex, column, auto, auto);
@@ -88,20 +99,37 @@
     display: flex;
     position: relative;
     margin-top: map-get($espacio, marginPadding);
+    @include mobile {
+        height: auto;
+        width: 100%;
+        position: none;
+    }
     :nth-child(2){
         position: relative;
         top: -70%;
+        @include mobile {
+            top: 0;
+        }
     }
     :nth-child(3){
         position: relative;
         top: -65%;
+        @include mobile {
+            top: 0;
+        }
     }
     :nth-child(4){
         position: relative;
         top: -40%;
+        @include mobile {
+            top: 0;
+        }
     }
     :nth-child(5){
         position: relative;
         top: -40%;
+        @include mobile {
+            top: 0;
+        }
     }
 }

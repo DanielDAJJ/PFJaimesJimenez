@@ -7,6 +7,9 @@
     .pag__NuestrosClientes__Cont{
         @extend %flex_column;
         gap: 6em;
+        @include mobile {
+            text-align: center;
+        }
         h2{
             @include tablet {
                 text-align: center;
@@ -23,6 +26,11 @@
                 @include tablet {
                     width: 40%;
                 }
+                @include mobile {
+                    float: none;
+                    width: 100%;
+                    margin: 0 0 2.5em 0;
+                }
             }
             .pag__NuestrosClientes__Cont__Text__IMG--2{
                 width: 40%;
@@ -30,6 +38,11 @@
                 margin: 2em 0 0 2em;
                 @include tablet {
                     margin: 2em 0 2em 2em;
+                }
+                @include mobile {
+                    float: none;
+                    width: 100%;
+                    margin: 2.5em 0 2.5em 0;
                 }
             }
         }
