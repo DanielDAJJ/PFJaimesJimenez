@@ -4,6 +4,9 @@
     height: map-get($espacio, tamañoMax);
     overflow: hidden;
     margin-bottom: map-get($espacio, marginPadding);
+    @include mobile {
+        width: 100%;
+    }
 }
 .slide__Cont{
     max-width: map-get($espacio, tamañoMax);

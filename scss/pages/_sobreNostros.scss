@@ -10,14 +10,30 @@
     padding: 0 map-get($espacio, marginPadding);
     gap: map-get($espacio, Gap);
     height: auto;
+    @include tablet {
+        grid-template-areas:
+        "sobreNos sobreNos"
+        "sobreNos sobreNos"
+        "NosIMG NosIMG";
+    }
     .pag__SobreNos__Texto{
         grid-area: sobreNos;
         .pag__SobreNos__Texto__Art{
             @include display(flex, column, auto, auto);
             gap: 6em;
+            @include tablet {
+                display: flex;
+                flex-direction: column;
+                gap: 4em;
+                text-align: center;
+            }
             p{
                 font-size: 1.5em;
                 line-height: 1.5em;
+                @include tablet {
+                    font-size: 1.2em;
+                    line-height: 1.3em;
+                }
             }
         }
     }
@@ -27,5 +43,21 @@
         gap: map-get($espacio, Gap);
         border-left: 2px solid map-get($colores, colorTerciario);
         padding-left: 2em;
+        @include tablet {
+            grid-area: NosIMG;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            gap: 1em;
+            border-top: 2px solid #FF3524;
+            border-left: none;
+            padding-top: 2em;
+            padding-left: 0;
+        }
+        .pag__SobreNos__Img--img{
+            @include tablet {
+                width: 30%;
+            }
+        }
     }
 }

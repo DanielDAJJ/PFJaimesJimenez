@@ -11,6 +11,14 @@
     "navP producto producto";
     grid-template-columns: 20% auto auto;
     gap: map-get($espacio, Gap);
+    @include tablet {
+        grid-template-areas:
+        "navP navP"
+        "producto producto"
+        "producto producto";
+        grid-template-columns: auto;
+        margin: 0 2.5em;
+    }
 }
 .pag__Cajasor__Nav{
     grid-area: navP;
@@ -20,6 +28,11 @@
     padding: map-get($espacio, marginPadding);
     border-right: 2px solid map-get($colores , colorPrimario);
     @include display (flex, column, auto, auto);
+    @include tablet {
+        border-right: none;
+        border-bottom: 2px solid #1C2C35;
+        height: auto;
+    }
     .pag__Cajasor__Nav__Cabeza{
         font-size: 2em;
         text-align: center;
@@ -35,6 +48,10 @@
         padding: 0;
         font-size: 1.25em;
         line-height: 2em;
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+        }
         li{
             &:hover a{
                 color: map-get($colores, colorTerciario);
@@ -49,4 +66,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: map-get($espacio, Gap);
     justify-items: center;
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

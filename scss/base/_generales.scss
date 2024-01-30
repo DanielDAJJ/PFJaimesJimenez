@@ -68,7 +68,7 @@ img{
     max-width: map-get($espacio, tamañoMax);
     height: auto;
 }
-h2{
+h2, h4{
     color: map-get($colores, colorTerciario);
 }
 strong{

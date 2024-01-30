@@ -7,6 +7,11 @@
     .pag__NuestrosClientes__Cont{
         @extend %flex_column;
         gap: 6em;
+        h2{
+            @include tablet {
+                text-align: center;
+            }
+        }
         .pag__NuestrosClientes__Cont__Text{
             font-size: 1.25em;
             line-height: 1.5em;
@@ -15,11 +20,17 @@
                 width: 30%;
                 float: left;
                 margin: 0 2em 2em 0em;
+                @include tablet {
+                    width: 40%;
+                }
             }
             .pag__NuestrosClientes__Cont__Text__IMG--2{
                 width: 40%;
                 float: right;
                 margin: 2em 0 0 2em;
+                @include tablet {
+                    margin: 2em 0 2em 2em;
+                }
             }
         }
     }

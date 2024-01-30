@@ -15,19 +15,29 @@
             @include tablet {
                 width: 460px;
             }
+            @include mobile {
+                width: 325px;
+                justify-self: center;
+            }
         }
     }
     .sobreNos__Texto{
         @include display (flex, column, space-around, auto);
         width: 480px;
         gap: 3em;
+        p{
+            font-size: 1.25em;
+        }
         @include tablet {
             text-align: center;
             margin: 2em 0 0 0;
             gap: 2em;
         }
-        p{
-            font-size: 1.25em;
+        @include mobile {
+            width: 100%;
+            margin-bottom: 0;
+            gap: 2em;
+            padding: 0 2em;
         }
     }
 }
@@ -48,6 +58,14 @@
         gap: 1em;
         justify-content: center;
         justify-items: center;
+        @include tablet {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+        @include mobile {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+        }
     }
 }
 .cajaSor__BG{
@@ -57,6 +75,14 @@
     position: absolute;
     top: 50vh;
     z-index: -1;
+    @include tablet {
+        height: 600px;
+        top: 28em;
+    }
+    @include mobile {
+        height: 1200px;
+        top: 20%;
+    }
 }
 .cajaSor__Boton{
     width: 20em;
@@ -68,6 +94,10 @@
     border: none;
     border-radius: 1em;
     transition: 0.5s;
+    @include mobile {
+        width: 10em;
+        height: 5em;
+    }
     a{
         width: map-get($espacio, tamañoMax);
         height: map-get($espacio, tamañoMax);
@@ -92,6 +122,10 @@
     gap: 3em;
     border: solid map-get($colores, colorTerciario);
     border-width: 2px 0;
+    @include tablet {
+        margin: 2.5em 0;
+        padding: 2em 0;
+    }
 }
 .enventos__Texto{
     display: flex;
@@ -100,6 +134,14 @@
     gap: 5em;
     .enventos__Texto__Parrafo{
         font-size: 1.25em;
+    }
+    @include tablet {
+        text-align: center;
+    }
+}
+.eventos__Img{
+    @include tablet {
+        display: none;
     }
 }
 /**************************************** Index Sección Clientes  ****************************************/
@@ -116,4 +158,9 @@
     grid-template-columns: repeat(2, 1fr);
     gap: map-get($espacio, Gap);
     padding: 0 map-get($espacio, marginPadding);
+    @include tablet {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        gap: 1em;
+    }
 }
