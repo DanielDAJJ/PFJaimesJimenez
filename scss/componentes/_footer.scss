@@ -8,6 +8,7 @@ footer{
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: map-get($espacio, Gap);
+    width: 100vw;
     strong{
         color: map-get($colores, colorSecundario);
     }

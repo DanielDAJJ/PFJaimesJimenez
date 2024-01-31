@@ -6,6 +6,10 @@
     width: map-get($espacio, tamañoMax);
     padding: 0 2em 0.5em 2em;
     z-index: 2;
+    @include tablet{
+        padding: 0 2em;
+        width: map-get($espacio, tamañoMax);
+    }
     .header__Nav__Home{
         display: block;
         max-width: 150px;

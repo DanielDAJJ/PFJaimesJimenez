@@ -29,9 +29,11 @@ body{
         "eventos eventos"
         "clientes clientes"
         "footer footer";
+        overflow-x: hidden;
+        justify-content: center;
     }
     @include mobile {
-        max-width: 100%;
+        max-width: 100vw;
         grid-template-areas: 
         "header"
         "main"
