@@ -89,7 +89,7 @@ img {
   height: auto;
 }
 
-h2, h4 {
+h1, h2, h4 {
   color: #FF3524;
 }
 
@@ -221,7 +221,7 @@ strong {
 @media screen and (max-width: 760px) {
   .clientes__Card {
     flex-direction: column;
-    padding: 0;
+    padding: 2em 0;
     max-height: 100%;
     text-align: left;
   }
@@ -231,7 +231,7 @@ strong {
 }
 @media screen and (max-width: 760px) {
   .clientes__Card .clientes__Card__IMG {
-    width: 100%;
+    display: none;
   }
 }
 .clientes__Card .clientes__Card__Texto {

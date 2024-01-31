@@ -43,14 +43,14 @@
     background-color: #FFF1F0;
     @include mobile {
         flex-direction: column;
-        padding: 0;
+        padding: 2em 0;
         max-height: 100%;
         text-align: left;
     }
     .clientes__Card__IMG{
         width: 30%;
         @include mobile {
-            width: map-get($espacio, tamañoMax);
+            display: none;
         }
     }
     .clientes__Card__Texto{
