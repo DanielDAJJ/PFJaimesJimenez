@@ -42,12 +42,12 @@ body {
   box-sizing: border-box;
   display: grid;
   grid-template-areas: "header header header" "main main main" "sobreNos sobreNos sobreNos" "cajaSor cajaSor cajaSor" "eventos eventos eventos" "clientes clientes clientes" "footer footer footer";
+  overflow-x: hidden;
+  justify-content: center;
 }
 @media screen and (max-width: 1024px) {
   body {
     grid-template-areas: "header header" "main main" "sobreNos sobreNos" "cajaSor cajaSor" "eventos eventos" "clientes clientes" "footer footer";
-    overflow-x: hidden;
-    justify-content: center;
   }
 }
 @media screen and (max-width: 760px) {

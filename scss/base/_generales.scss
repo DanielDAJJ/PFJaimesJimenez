@@ -20,6 +20,8 @@ body{
     "eventos eventos eventos"
     "clientes clientes clientes"
     "footer footer footer";
+    overflow-x: hidden;
+    justify-content: center;
     @include tablet {
         grid-template-areas:
         "header header"
@@ -29,8 +31,6 @@ body{
         "eventos eventos"
         "clientes clientes"
         "footer footer";
-        overflow-x: hidden;
-        justify-content: center;
     }
     @include mobile {
         max-width: 100vw;
