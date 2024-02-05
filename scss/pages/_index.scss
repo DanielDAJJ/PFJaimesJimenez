@@ -1,3 +1,19 @@
+/**************************************** Index Slide ****************************************/
+.slide__BG{
+    position: absolute;
+    z-index: 1;
+    background-color: #1c2c35c0;
+    @include display(flex, auto, flex-end, flex-end);
+    width: map-get($espacio, tamañoMax);
+    height: map-get($espacio, tamañoMax);
+    padding: map-get($espacio, marginPadding);
+    h1{
+        color: map-get($colores, colorSecundario);
+        span{
+            color: map-get($colores, colorTerciario);
+        }
+    }
+}
 /**************************************** Index Sección Sobre Nosotros ****************************************/
 .sobreNos{
     grid-area: sobreNos;

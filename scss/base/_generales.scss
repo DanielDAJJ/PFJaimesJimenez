@@ -50,6 +50,7 @@ body{
     main{
         grid-area: main;
         height: 70vh;
+        position: relative;
         @include tablet{
             padding: 0;
             height: 75vh;
