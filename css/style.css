@@ -34,6 +34,7 @@
 }
 
 body {
+  scrollbar-color: #FF3524, #FBFEF9;
   max-width: 100%;
   font-family: "Comfortaa";
   color: #1c2c35;
