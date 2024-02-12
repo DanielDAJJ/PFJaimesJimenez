@@ -440,7 +440,7 @@ footer :last-child {
 }
 @media screen and (max-width: 1024px) {
   .sobreNos .sobreNos__Texto {
-    text-align: center;
+    text-align: left;
     margin: 2em 0 0 0;
     gap: 2em;
   }
@@ -569,11 +569,16 @@ footer :last-child {
 }
 @media screen and (max-width: 760px) {
   .enventos__Texto .enventos__Texto__Parrafo {
-    padding: 0 2em;
+    padding: 0 1em;
   }
 }
 @media screen and (max-width: 1024px) {
   .enventos__Texto {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .enventos__Texto h2 {
     text-align: center;
   }
 }
@@ -722,6 +727,11 @@ footer :last-child {
   .pag__Eventos {
     grid-template-columns: repeat(2, 1fr);
     height: auto;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .pag__Eventos h1, .pag__Eventos h4 {
     text-align: center;
   }
 }
@@ -729,7 +739,7 @@ footer :last-child {
   .pag__Eventos {
     grid-template-columns: 1fr;
     height: auto;
-    text-align: center;
+    text-align: left;
   }
 }
 .pag__Eventos .pag__Eventos__Texto {
@@ -788,7 +798,7 @@ footer :last-child {
 }
 @media screen and (max-width: 1024px) {
   .pag__Eventos .pag__Eventos__Form form {
-    align-items: center;
+    align-items: left;
   }
 }
 .pag__Eventos .pag__Eventos__Form form legend {
@@ -811,8 +821,8 @@ footer :last-child {
   color: #FBFEF9;
   border: none;
   width: 150px;
-  height: 35px;
-  padding: 5px;
+  height: 42px;
+  padding: 10px;
   border-radius: 1em;
 }
 .pag__Eventos .pag__Eventos__Form form textarea {
@@ -909,7 +919,7 @@ footer :last-child {
     display: flex;
     flex-direction: column;
     gap: 4em;
-    text-align: center;
+    text-align: left;
   }
 }
 .pag__SobreNos .pag__SobreNos__Texto .pag__SobreNos__Texto__Art p {
@@ -968,11 +978,16 @@ footer :last-child {
 }
 @media screen and (max-width: 760px) {
   .pag__NuestrosClientes .pag__NuestrosClientes__Cont {
-    text-align: center;
+    text-align: left;
   }
 }
 @media screen and (max-width: 1024px) {
-  .pag__NuestrosClientes .pag__NuestrosClientes__Cont h2 {
+  .pag__NuestrosClientes .pag__NuestrosClientes__Cont h1 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 760px) {
+  .pag__NuestrosClientes .pag__NuestrosClientes__Cont h1 {
     text-align: center;
   }
 }

@@ -8,10 +8,13 @@
         @extend %flex_column;
         gap: 6em;
         @include mobile {
-            text-align: center;
+            text-align: left;
         }
-        h2{
+        h1{
             @include tablet {
+                text-align: center;
+            }
+            @include mobile {
                 text-align: center;
             }
         }

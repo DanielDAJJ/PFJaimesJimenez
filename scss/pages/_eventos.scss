@@ -10,12 +10,17 @@
     @include tablet {
         grid-template-columns: repeat(2, 1fr);
         height: auto;
-        text-align: center;
+        text-align: left;
+    }
+    h1, h4{
+        @include tablet {
+            text-align: center;
+        }
     }
     @include mobile {
         grid-template-columns: 1fr;
         height: auto;
-        text-align: center;
+        text-align: left;
     }
     .pag__Eventos__Texto{
         @include display(flex, column, auto, auto);
@@ -53,7 +58,7 @@
             @include display (flex, column, auto, auto);
             gap: 1.05em;
             @include tablet {
-                align-items: center;
+                align-items: left;
             }
             legend{
                 font-size: 1em;
@@ -75,8 +80,8 @@
                 color: map-get($colores, colorSecundario);
                 border: none;
                 width: 150px;
-                height: 35px;
-                padding: 5px;
+                height: 42px;
+                padding: 10px;
                 border-radius: 1em;
             }
             textarea{
