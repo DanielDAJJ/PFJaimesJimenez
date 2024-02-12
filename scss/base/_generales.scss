@@ -5,13 +5,13 @@
     box-sizing: border-box;
 }
 body{
-    ::-webkit-scrollbar{
+    &::-webkit-scrollbar{
         width: 2em;
     }
-    ::-webkit-scrollbar-track{
+    &::-webkit-scrollbar-track{
         background-color: map-get($colores, colorSecundario);
     }
-    ::-webkit-scrollbar-thumb{
+    &::-webkit-scrollbar-thumb{
         background-color: map-get($colores, colorTerciario);
     }
     scrollbar-width: thin;
