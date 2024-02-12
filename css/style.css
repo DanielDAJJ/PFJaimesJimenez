@@ -34,7 +34,8 @@
 }
 
 body {
-  scrollbar-color: #FF3524, #FBFEF9;
+  scrollbar-width: thin;
+  scrollbar-color: #FF3524 #FBFEF9;
   max-width: 100%;
   font-family: "Comfortaa";
   color: #1c2c35;
@@ -45,6 +46,15 @@ body {
   grid-template-areas: "header header header" "main main main" "sobreNos sobreNos sobreNos" "cajaSor cajaSor cajaSor" "eventos eventos eventos" "clientes clientes clientes" "footer footer footer";
   overflow-x: hidden;
   justify-content: center;
+}
+body ::-webkit-scrollbar {
+  width: 2em;
+}
+body ::-webkit-scrollbar-track {
+  background-color: #FBFEF9;
+}
+body ::-webkit-scrollbar-thumb {
+  background-color: #FF3524;
 }
 @media screen and (max-width: 1024px) {
   body {
